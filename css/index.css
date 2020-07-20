@@ -15,7 +15,7 @@
 .topmenu a:hover {color: rgba(255, 255, 255, 1);}
 .topmenu .sns a{ padding-right: 10px; font-size: 12.2px;} /*우측여백, 아이콘크기*/
 .topmenu .sns a:first-child span{ font-size: 11px} /*전화번호 크기 */
-.topmenu .login { position: absolute;  right: 0; top: 0;} /*부모 위치(row)에서 relative 설정*/
+.topmenu .login { position: absolute;  right: 0; top: 0; color: #000;} /*부모 위치(row)에서 relative 설정*/
 .topmenu .login a {padding-left: 10px; font-size: 11px;} /*좌측여백*/
 .logoNav {position: relative; height: 76px;}
 .logoNav h1 { color: #ffae3d; font-size: 26.25px; line-height: 76px;  /*박스높이와 같게 부모와 같은 높이로 설정*/
