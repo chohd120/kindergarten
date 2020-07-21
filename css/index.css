@@ -3,8 +3,18 @@
 
 .row { max-width:1167px; margin:0 auto;}
 
-#header {position: fixed; width: 100%; top: 0; left: 0; z-index: 99999;
+.skip a { display:block;
+    background:#000; color:#fff;
+    text-align:center; width: 1px;  height: 1px;
+    overflow:hidden; position:absolute; 
+    top:-100px }
+.skip a:focus { width: 100%;  height:auto;
+    padding:10px 0px; position:fixed;
+    top:0px; z-index:9999999; }  
+
+#header {width: 100%; top: 0; left: 0; z-index: 99999;
     background: #fff; box-shadow: 0px 3px 3px #eee;}
+        
 
 .topmenu .row { position: relative;} /* login에서 absolute 하였기에 부모 속성에서 설정 */
 
