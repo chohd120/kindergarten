@@ -13,16 +13,16 @@
 <body>
     
     <div class="skip">
-        <a href="#section">본문 바로가기</a>
+        <a href="#section">본문 바로가기</a> <!-- id로 된것만 가능 -->
     </div>
 
     <header id="header">
         <div class="topmenu">
             <div class="row">
                 <div class="sns">
-                    <a href="#"><i class="fas fa-phone-square"></i> <span>02-1234-5678</span></a>
+                    <a href="#"><i class="fas fa-phone-square"></i> <span>02-1234-5678</span></a> <!--화면에 들어가야하니 blind X-->
                     <a href="#"><i class="fab fa-instagram"></i>
-                        <span class="blind">인스타그램</span>
+                        <span class="blind">인스타그램</span> <!--span.blind 낭독만 시키고 표기안함-->
                     </a>
                     <a href="#"><i class="fas fa-sms"></i>
                         <span class="blind">문자전송</span>
@@ -40,7 +40,7 @@
                 <a href="index.html">CompanyName</a>
             </h1>
             <nav class="nav">
-                <ul class="depth1 cf">
+                <ul class="depth1 cf"> <!-- ul.depth1>li*6>a -->
                     <li><a href="#">Home</a></li>
                     <li><a href="#">유치원소개</a>
                         <ul class="depth2">
@@ -111,19 +111,19 @@
             </div>
             <div class="arr prev"><i class="fas fa-chevron-left"></i></div>
             <div class="arr next"><i class="fas fa-chevron-right"></i></div>
-            <div class="dotBox">
+            <div class="dotBox"> <!--div.dotbox>a*2>span.blind-->
                 <a href="#" class="active"><span class="blind">1</span></a>
                 <a href="#"><span class="blind">2</span></a>
             </div>
         </article>
 
         <article class="act row">
-            <div class="title">
+            <div class="title"> <!--공통된 속성으로 css에 title로 묶음-->
                 <h2>유치원활동</h2>
                 <p><strong>앞선 정보와 신뢰를 최우선</strong> 가치로 삼고 교육과정을 개발하고 있습니다</p>
             </div>
             <ul class="cf">
-                <li>
+                <li> <!-- li태그 안에는 무엇이든 들어올수 있다. h3+p+a -->
                     <div>
                         <h3>갤러리형</h3>
                         <p>In 2027 we will continue to use minimal layouts, and complexion reduction</p>
@@ -154,7 +154,7 @@
             </ul>
         </article>
         <article class="curriInfo row">
-            <div class="title">
+            <div class="title"> <!--공통된 속성으로 css에 title로 묶음-->
                 <h2>교육과정안내</h2>
                 <p><strong>앞선 정보와 신뢰를 최우선</strong> 가치로 삼고 교육과정을 개발하고 있습니다</p>
             </div>
@@ -162,7 +162,7 @@
                 <div class="column">
                     <div>
                         <img src="images/main-product1.min.jpg" alt="">
-                        <div class="overlay">
+                        <div class="overlay"> <!-- div.overlay>div.copy -->
                             <div class="copy">
                                 <h3>The Everything Store</h3>
                                 <p>Jeff Bezos and the Age of Amazon</p>
@@ -282,13 +282,13 @@
                     <h2>온라인입학상담</h2>
                     <div class="consult">
                         궁금하신 내용을 입력해주세요.<br>
-                        담당자가 확인 후 신속하게 연락드리겠습니다.
+                        담당자가 확인 후 신속하게 연락드리겠습니다. <!--두줄의 스타일이 같을경우 br로 한묶음, 다를경우 p태그-->
                         <a href="#">작성하러가기</a>
                     </div>
                 </div>
                 <div>
                     <h2>공지사항</h2>
-                    <ul class="notice">
+                    <ul class="notice"> <!-- ul.notice>li*2>a -->
                         <li><a href="#">카카오톡 상담 오픈</a></li>
                         <li><a href="#">[Youtube] 근육맨 캥거루들의 격투기 한판 대결...</a></li>
                     </ul>
