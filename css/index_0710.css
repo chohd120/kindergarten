@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import "reset.css";
+
+.row { width:1167px; margin:0 auto;}
+
+.topmenu {background:#f76f6f; font-size:12px;
+    color:rgba(255,255,255,0.8);
+    font-family:'맑은고딕';
+    height:40px;
+    position:relative;
+    padding:11px 0;}
+.topmenu .row {position: relative;}
+.topmenu .login {position: absolute; top: 0 ; right: 0px;}
+.topmenu a {padding: 0 5px ;}
+.topmenu a:hover {color:#fff}
+
+.h1Nav {height:75.96px;
+    font-family:'맑은고딕';
+    position:relative; }
+.h1Nav h1 {padding:20px 5px;
+    font-size:25px;
+    color:#ffae3d;
+    font-weight: bold;}
+.h1Nav .nav ul li strong {color:#ffd23c}
+.h1Nav .nav {position:absolute; top:24px; right:5px;
+        font-weight:bold; }
+.h1Nav .nav ul li {display:inline-block; padding:0 5px }
+.h1Nav .nav i {font-size:10px}
+.h1Nav h1 a:hover {color:#ffdb42}
+.h1Nav .nav a:hover {color:#ffdb42}
+
+.slide { width:100%;
+    height:600px;
+    overflow:hidden;} 
+.slide .slideInner { height:600px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative; }
+.slide .slideInner:nth-child(1) {background: url(../images/slide1.jpg);}
+
+.slideInner .text {text-align:center;
+    font-family:'맑은고딕';
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);}
+.slideInner .text h2 { font-size:70px;
+    color:#fff;
+    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin:0 0 20px;}
+.slideInner .text h3 {font-size:20px;
+    color:#fff;
+    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin:0 0 40px;}
+.slideInner .text span { text-decoration:underline;}
+.slideInner .text span:hover {color:#ffd23c;}
+.slideInner .text > a {font-size:14px;
+    padding:14px 28px;
+    border-radius:5%;
+    font-weight:bold;}
+
+.button1 { background-color:rgba(0, 0, 0, 0.5);
+    color:#fff}
+.button2 {background-color:rgba(255,255,255,0.8)}
+.button1:hover {color:#ffd23c;}
+.button2:hover {color:#fff}
