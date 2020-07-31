@@ -48,15 +48,15 @@
 .join_form .ymd span { margin-right: 20px;}
 
 .join_form .gender_area label { line-height:45px; padding-right:15px  }
-.join_form .gender_area label::before { 
+/* .join_form .gender_area label::before { 
     content: '\f058'; font-family: 'font Awesome 5 Free'; 
     font-weight: 400; color: #ddd;
     padding-right: 8px;}
-.join_form .gender_area input[type=radio]:checked + label::before { /*선택했을시 변화설정 */
+.join_form .gender_area input[type=radio]:checked + label::before {       선택했을시 변화설정
     font-weight: 900; color: green;
-    }    /* content, font-family, padding-right는 상기와 중복으로 삭제함 */
+    }    content, font-family, padding-right는 상기와 중복으로 삭제함 */
 
-.join_form .hobby_area label::before { display: inline-block; /*label은 inline 성격이므로 transform이 불가하여 display:inline-block추가 */
+/* .join_form .hobby_area label::before { display: inline-block;     label은 inline 성격이므로 transform이 불가하여 display:inline-block추가 
     transform: scale(2);
     content: '\f0c8'; font-family: 'font Awesome 5 Free'; 
     font-weight: 400; color: #ddd;
@@ -65,7 +65,38 @@
 .join_form .hobby_area input[type=checkbox]:checked + label::before {
     content: '\f14a';  
     font-weight: 900; color: blue;
-   }
+   } */
+
+.join_form .gender_area label::before { 
+    content: ''; 
+    display: inline-block;
+    margin-right: 8px;
+    width: 20px; height: 20px;
+    background-image: url(../images/sprite_img.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -296px -258px ;
+    position: relative; top: 5px;
+}
+.join_form .gender_area input[type=radio]:checked + label::before {
+    background-position: -296px -186px ;
+    }
+
+.join_form .hobby_area label::before {
+    content: '';
+    display: inline-block;
+    margin-right: 8px;
+    width: 20px; height: 20px;
+    background-image: url(../images/sprite_img.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -296px -114px ;      /* 이미지내의 좌표값*/
+    position: relative; top: 5px;                 /* 아이콘 위치조정 : 주변 영향없이 해당개체만 이동원할시 relative */         
+    transform: scale(1.2);}            /* 아이콘 크기조정 */
+.join_form .hobby_area input[type=checkbox]:checked + label::before {
+    background-position: -138px -182px 
+}
+
 .join_form .hobby_area label { line-height:45px; padding-right:15px  }
 .join_form .gender_area input[type=radio] {display: none;} /*버튼 크기조정 */
 .join_form .hobby_area input[type=checkbox] {display: none;}
